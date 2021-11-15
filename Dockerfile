@@ -9,4 +9,4 @@ FROM openjdk:11 AS final
 WORKDIR /app
 COPY --from=build /build/target .
 COPY --from=build /build/Procfile .
-CMD java -jar gulliver-traveller-backend-login-0.0.1-SNAPSHOT.jar --server.port=$PORT
+CMD java -jar guliver-login-api-1.0.0.jar --server.port=$PORT
